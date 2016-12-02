@@ -1,18 +1,26 @@
 
 public class DisJointSet {
 
-	private int[] s;
+	private static int[] s;
 
 	/*
 	 * implementation changed slightly for convenience. Array index starts from
 	 * 1.
 	 * 
 	 */
-
+	public static int[] getArray(){
+		return s;
+	}
+	
 	public DisJointSet(int numElements) {
 		s = new int[numElements + 1];
 		for (int i = 1; i <= numElements; i++)
 			s[i] = -1;
+	}
+	
+	public void print(){
+		for(int i=0;i<s.length;i++)
+			System.out.print(s[i]+" ");
 	}
 
 	/**

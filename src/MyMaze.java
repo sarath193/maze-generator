@@ -8,12 +8,12 @@ import java.util.Scanner;
 public class MyMaze {
 	final int rows;
 	final int cols;
-	String[][] maze;
+	static String[][] maze;
 	final String SPACE = "  ";
 	final String WALL = "||";
 	final int X;
 	final int Y;
-	final DisJointSet set;
+	static DisJointSet set;
 	final int nodeCount;
 
 	private int COUNTER;
@@ -33,14 +33,18 @@ public class MyMaze {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter width and height of Maze, separated by space: ");
-		int width = sc.nextInt();
-		int height = sc.nextInt();
+		
+
+	}
+	
+	public static String[][] getMaze(int width, int height){
 		MyMaze m = new MyMaze(width, height);
 		
 		m.generateGrid();
 		m.createMaze();
 		m.printMaze();
-
+		//set.print();
+		return maze;
 	}
 
 	/*
