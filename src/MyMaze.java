@@ -33,17 +33,17 @@ public class MyMaze {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter width and height of Maze, separated by space: ");
-		
+		getMaze(sc.nextInt(), sc.nextInt());
 
 	}
-	
-	public static String[][] getMaze(int width, int height){
+
+	public static String[][] getMaze(int width, int height) {
 		MyMaze m = new MyMaze(width, height);
-		
+
 		m.generateGrid();
 		m.createMaze();
 		m.printMaze();
-		//set.print();
+		// set.print();
 		return maze;
 	}
 
