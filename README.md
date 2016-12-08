@@ -43,7 +43,7 @@ Maze Solver: The maze solver class uses DFS to solve the maze and find a path. T
 Starting from node 1, in each loop, the stack is peeked and one of the unvisited child is pushed into the stack till we reach a dead end. Then the node is popped until we find a differnet branch. We continue doing this, till we reach the final node.
 Then all the nodes in the stack are the nodes in the path. Connecting them with a different character gives us a path.
 
-Example maze solution:
+Solution for the above maze:
 
 ||||||||||||||||||||||||||||||||||||||||||
 @@@@||  ||      ||      ||      ||  ||  ||
