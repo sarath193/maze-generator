@@ -15,9 +15,10 @@ Using Disjoint Sets :
   c. We continue this, till every block is in same set.
  
  Example output : 
- 
- ||||||||||||||||||||||||||||||||||||||||| <br/>
-    ||  ||      ||      ||      ||  ||  || <br/>
+
+<pre>
+||||||||||||||||||||||||||||||||||||||||||
+    ||  ||      ||      ||      ||  ||  || 
 ||  ||  ||||||  ||  ||||||  ||||||  ||  ||
 ||  ||  ||  ||          ||  ||  ||      ||
 ||  ||  ||  ||||||  ||||||  ||  ||  ||  ||
@@ -37,6 +38,8 @@ Using Disjoint Sets :
 ||||||  ||||||||||||||  ||  ||  ||||||||||
 ||      ||                  ||            
 ||||||||||||||||||||||||||||||||||||||||||
+
+</pre>
   
   
 Maze Solver: The maze solver class uses DFS to solve the maze and find a path. To draw the path, and to keep track of nodes in the path are maintained in a stack.
@@ -45,6 +48,7 @@ Then all the nodes in the stack are the nodes in the path. Connecting them with 
 
 Solution for the above maze:
 
+<pre>
 ||||||||||||||||||||||||||||||||||||||||||
 @@@@||  ||      ||      ||      ||  ||  ||
 ||@@||  ||||||  ||  ||||||  ||||||  ||  ||
@@ -66,3 +70,5 @@ Solution for the above maze:
 ||||||  ||||||||||||||  ||  ||@@||||||||||
 ||      ||                  ||@@@@@@@@@@@@
 ||||||||||||||||||||||||||||||||||||||||||
+
+</pre>
