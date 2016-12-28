@@ -35,30 +35,6 @@ public class MazeSolver {
 		Arrays.fill(visited, false);
 	}
 
-	void solveMaze2() {
-		stack2 = new Stack<>();
-		set = DisJointSet.getArray();
-		int i;
-		for (i = 1; i < set.length; i++)
-			if (set[i] < 0)
-				break;
-		int node = 1;
-		while (node > 0) {
-			// System.out.println(node+" child");
-			stack2.push(node);
-			node = set[node];
-			// System.out.println(node+" parent");
-		}
-		node = numNodes;
-		while (node > 0) {
-			// System.out.println(node+" child");
-			stack2.push(node);
-			node = set[node];
-			// System.out.println(node+" parent");
-		}
-
-	}
-
 	void solveMaze() {
 		maze[2][2] = PATH;
 		stack = new Stack<>();
